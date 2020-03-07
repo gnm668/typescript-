@@ -1,4 +1,6 @@
-var a = 5;
-var b = 5;
-var c = a + b;
-console.log(c);
+// let a = 5
+// let b = 5
+// let c = a + b
+// console.log(c)
+var d = 'hello';
+console.log(typeof d);
