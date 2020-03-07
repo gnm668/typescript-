@@ -15,7 +15,7 @@ class Car {
     model: string;
     doors: number;
     isElectric: boolean;
-    
+
     constructor(model: string, doors: number, isElectric: boolean) {
         this.model = model;
         this.doors = doors;
@@ -26,4 +26,9 @@ class Car {
         console.log(`This car is a ${this.model}`);
     }
 }
+
+const mr2 = new Car('toyota', 2, false)
+// console.log(mr2.model, mr2.doors, mr2.isElectric)
+
+mr2.displayMake();
 

@@ -19,3 +19,6 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
+var mr2 = new Car('toyota', 2, false);
+// console.log(mr2.model, mr2.doors, mr2.isElectric)
+mr2.displayMake();
