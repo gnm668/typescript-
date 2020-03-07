@@ -1,12 +1,29 @@
-// let a = 5
-// let b = 5
-// let c = a + b
-// console.log(c)
+// let a = 5;
+// let b = 5;
+// let c = a + b;
+// console.log(c);
 
-// let d: any = 'hello'
+// let d: any = 'hello';
 // console.log(typeof d);
 
-let e: string = 'hi';
-let f: number = 4;
-let g: boolean = true
-console.log(typeof e,typeof f,typeof g)
+// let e: string = 'hi';
+// let f: number = 4;
+// let g: boolean = true;
+// console.log(typeof e,typeof f,typeof g);
+
+class Car {
+    model: string;
+    doors: number;
+    isElectric: boolean;
+    
+    constructor(model: string, doors: number, isElectric: boolean) {
+        this.model = model;
+        this.doors = doors;
+        this.isElectric = isElectric;
+    }
+
+    displayMake(): void {
+        console.log(`This car is a ${this.model}`);
+    }
+}
+
