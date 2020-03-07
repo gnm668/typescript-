@@ -11,10 +11,25 @@
 // let g: boolean = true;
 // console.log(typeof e,typeof f,typeof g);
 
+const returnStupidOrString = (isStupid: boolean): StupidString => {
+    if (isStupid) {
+        return "stupid";
+    }
+    return "string";
+}
+
+type StupidString = "stupid" | "string";
+
+const stupidString: StupidString = "string"
+
+const string = returnStupidOrString(false);
+
 class Car {
     model: string;
     doors: number;
     isElectric: boolean;
+    onStart: () => void;
+    getMilesPerHour: () => number;
 
     constructor(model: string, doors: number, isElectric: boolean) {
         this.model = model;
@@ -22,11 +37,15 @@ class Car {
         this.isElectric = isElectric;
     }
 
-    // displayMake(): void {
-    //     console.log(`This car is a ${this.model}`);
-    // }
+    returnNumber = () => {
+        return 2;
+    }
 
-    displayMake = () => {
+    displayMake(): void {
+        console.log(`This car is a ${this.model}`);
+    }
+
+    displayMakeTwo = () => {
         console.log(`This car is a ${this.model}`);
     }
     
