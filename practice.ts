@@ -22,9 +22,14 @@ class Car {
         this.isElectric = isElectric;
     }
 
-    displayMake(): void {
+    // displayMake(): void {
+    //     console.log(`This car is a ${this.model}`);
+    // }
+
+    displayMake = () => {
         console.log(`This car is a ${this.model}`);
     }
+    
 }
 
 const mr2 = new Car('toyota', 2, false)
