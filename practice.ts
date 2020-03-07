@@ -13,9 +13,9 @@
 
 const returnStupidOrString = (isStupid: boolean): StupidString => {
     if (isStupid) {
-        return "stupid";
+        return "stupid" //as StupidString;
     }
-    return "string";
+    return "string" //as StupidString;
 }
 
 type StupidString = "stupid" | "string";
@@ -45,7 +45,7 @@ class Car {
         console.log(`This car is a ${this.model}`);
     }
 
-    displayMakeTwo = () => {
+    displayMakeTwo = (): void => {
         console.log(`This car is a ${this.model}`);
     }
     
@@ -54,5 +54,5 @@ class Car {
 const mr2 = new Car('toyota', 2, false)
 // console.log(mr2.model, mr2.doors, mr2.isElectric)
 
-mr2.displayMake();
+mr2.displayMakeTwo();
 
